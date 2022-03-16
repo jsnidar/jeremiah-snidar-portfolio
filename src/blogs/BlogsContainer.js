@@ -45,7 +45,7 @@ const BlogsContainer = () => {
       <Row className="pb-4">
         <h2>Blog Posts</h2>
       </Row>
-      <Row s={1} md={2} xl={3} className='g-4'>
+      <Row>
         { blog.isLoading ? <Spinner animation="grow" variant="dark" /> : renderBlogs}
       </Row>
     </>

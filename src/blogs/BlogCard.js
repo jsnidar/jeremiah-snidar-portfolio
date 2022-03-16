@@ -12,7 +12,7 @@ const BlogCard = ({ post, profile }) => {
     return node
   }
   return(
-    <Col>
+    <Col sm={12} lg={6} xl={4} className='g-4'>
       <Card className="bg-light border-3">
         <Card.Img variant="top" src={post.thumbnail} />
         <Card.Body>
