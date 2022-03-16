@@ -28,7 +28,7 @@ const Education = () => {
   ]
 
   const renderEducation = education.map((school, index) => <Row key={index} className="pb-4">
-    <Col className="text-start fs-4">
+    <Col sm={12} className="text-start fs-4">
       <span className="fw-bold">{school.degree}</span>
       <br></br>
       <span>{school.concentration}</span>
