@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 
 const ProjectsContainer = () => {
-
-  const [ showProjects, setShowProjects ] = useState(false)
 
   const projects = [
     { 
@@ -28,14 +25,12 @@ const ProjectsContainer = () => {
     }
   ]
 
-  const projectsHeader = showProjects ? "Portfolio (hide)" : "Portfolio (show)"
-
-  const renderProjects = projects.map(project => <ProjectCard project={project}/>)
+  const renderProjects = projects.map((project, index) => <ProjectCard key={index} project={project}/>)
 
   return (
     <Row className="pb-4 fs-4 text-start">
-      <h2 onClick={() => setShowProjects(!showProjects)}>{projectsHeader}</h2>
-      {showProjects ? renderProjects : null }
+      <h2>Portfolio</h2>
+      {renderProjects}
     </Row>
   )
 

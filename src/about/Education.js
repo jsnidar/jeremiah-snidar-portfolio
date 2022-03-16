@@ -1,12 +1,6 @@
-import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 const Education = () => {
-
-  const [ showEducation, setShowEducation ] = useState(false)
-
-  const educationHeader = showEducation ? "Education (hide)" : "Education (show)"
-
 
   const education = [
     {
@@ -33,7 +27,7 @@ const Education = () => {
     }
   ]
 
-  const renderEducation = education.map(school => <Row className="pb-4">
+  const renderEducation = education.map((school, index) => <Row key={index} className="pb-4">
     <Col className="text-start fs-4">
       <span className="fw-bold">{school.degree}</span>
       <br></br>
@@ -54,8 +48,8 @@ const Education = () => {
 
   return(
     <Row>
-      <h2 onClick={() => setShowEducation(!showEducation)} className="text-start bp-4">{educationHeader}</h2>
-      {showEducation ? renderEducation : null}
+      <h2 className="text-start bp-4">Education</h2>
+      {renderEducation}
     </Row>
   )
 }
