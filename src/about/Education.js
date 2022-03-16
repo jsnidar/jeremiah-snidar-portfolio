@@ -23,7 +23,7 @@ const Education = () => {
       concentration: "Concentration in Urban Education",
       school: "Metropolitan State University of Denver",
       graduated: "June 2008",
-      location: "Austin, Texas"
+      location: "Denver, Colorado"
     }
   ]
 
