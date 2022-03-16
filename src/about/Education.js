@@ -13,7 +13,7 @@ const Education = () => {
     {
       degree: "Master of Arts in Curriculum and Instruction",
       concentration: "Concentration in Urban Education",
-      school: "University of Denver, Morgridge College of Education",
+      school: "University of Denver, Mortgridge College of Education",
       graduated: "August 2013",
       gpa: 3.84,
       location: "Denver, Colorado"
