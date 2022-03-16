@@ -22,7 +22,7 @@ const BlogCard = ({ post, profile }) => {
             >{post.title}</NavLink>
           </Card.Title>
           <Card.Text className="fs-5">
-            {`${ToText(post.description.slice(0, 1000))}...`}
+            {`${ToText(post.description.slice(0, 500))}...`}
           </Card.Text>
         </Card.Body>
       </Card>
