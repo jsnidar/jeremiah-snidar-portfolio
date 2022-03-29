@@ -22,7 +22,7 @@ const ContactForm = () => {
           setAlertContent({heading: "Thank you for contacting me.", message: "I will respond to your message as soon as I can."})
           setShowAlert(true)
       }, (error) => {
-        setAlertContent({heading: "Something went wrong.", message: "Please try again."})
+        setAlertContent({heading: "Something went wrong.", message: error.text})
         setShowAlert(true)
       });
   };
