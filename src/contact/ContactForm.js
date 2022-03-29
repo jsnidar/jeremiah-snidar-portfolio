@@ -86,7 +86,7 @@ const ContactForm = ({setAlertContent, setShowAlert}) => {
       </Row>
       <Row>
         <Button 
-          variant="yellow" 
+          variant="light" 
           type="submit"
           onClick={e => sendEmail(e)}
         >

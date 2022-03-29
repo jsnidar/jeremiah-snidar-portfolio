@@ -11,10 +11,10 @@ const ContactPage = () => {
   return (
     <Container>
       {showAlert ? <ContactAlert
-        setAlertContent={setAlertContent} 
+        alertContent={alertContent}  
         setShowAlert={setShowAlert}
       /> : <ContactForm
-        alertContent={alertContent}  
+        setAlertContent={setAlertContent} 
         setShowAlert={setShowAlert}
       />}
     </Container>
