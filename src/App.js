@@ -12,7 +12,7 @@ import Education from './about/Education';
 import ProjectsContainer from './projects/ProjectsContainer';
 import BlogsContainer from './blogs/BlogsContainer';
 import NavBar from './navigation/NavBar';
-import ContactForm from './contact/ContactForm';
+import ContactPage from './contact/ContactPage';
 
 function App() {
 
@@ -65,7 +65,7 @@ function App() {
           <Route path='/portfolio' element={<ProjectsContainer />} />
           <Route path='/blog-posts' element={<BlogsContainer />} />
           <Route path='/education' element={<Education />} />
-          <Route path='/contact' element={<ContactForm />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Routes>
       </Container>
     </>
