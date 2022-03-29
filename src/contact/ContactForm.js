@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, Row, Col, Container, Button, Alert } from "react-bootstrap";
+import { Form, Row, Col, Button } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
 init('REACT_APP_EMAILJS_USER_ID');
