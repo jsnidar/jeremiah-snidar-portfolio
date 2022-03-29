@@ -1,4 +1,4 @@
-
+import { Alert, Button } from "react-bootstrap"
 
 const ContactAlert = ({alertContent, setShowAlert}) => {
 
@@ -16,3 +16,5 @@ const ContactAlert = ({alertContent, setShowAlert}) => {
     </Alert>)
 
 }
+
+export default ContactAlert;
