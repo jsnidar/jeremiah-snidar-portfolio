@@ -17,7 +17,7 @@ const ProjectsContainer = () => {
       description: "Weight loss tracking application for clients of Lovely Nutrition where users set goals and track their progress by entering weight and other measurements in check-ins.",
       videoUrl: "https://drive.google.com/file/d/1a-RAz4LN6n-8bAy-FliZ-9KiojVzunoN/view?usp=sharing"
     }, {
-      repoUrl: "",
+      repoUrl: "https://github.com/jsnidar/lovely-meal-tracker",
       thumbnail: "/lovely.png",
       title: "Lovely Meal Tracker",
       description: "Daily meal tracking application for clients of Lovely Nutrition where users set goals for macronutrients using the diabetic exchange list, enter their daily meals and track their progress in meeting daily goals.",
