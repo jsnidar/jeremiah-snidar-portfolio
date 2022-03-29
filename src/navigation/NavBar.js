@@ -5,7 +5,7 @@ import { Linkedin, Medium, Github } from 'react-bootstrap-icons';
 const NavBar = () => {
 
   const links = <>
-    <Nav.Link href="/">About</Nav.Link>
+    <Nav.Link href="/about-me">About</Nav.Link>
     <Nav.Link href="/portfolio">Portfolio</Nav.Link>
     <Nav.Link href="/blog-posts">Blog</Nav.Link>
     <Nav.Link href='/education'>Education</Nav.Link>

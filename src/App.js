@@ -7,6 +7,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { Linkedin, Medium, Github, Envelope } from 'react-bootstrap-icons';
+import Home from './Home'
 import AboutMe from './about/AboutMe';
 import Education from './about/Education';
 import ProjectsContainer from './projects/ProjectsContainer';
@@ -62,6 +63,7 @@ function App() {
         </Row>
         <Routes>
           <Route path='/' element={<AboutMe />} />
+          <Route path='/about-me' element={<AboutMe />} />
           <Route path='/portfolio' element={<ProjectsContainer />} />
           <Route path='/blog-posts' element={<BlogsContainer />} />
           <Route path='/education' element={<Education />} />

@@ -1,7 +1,7 @@
 
 import { Card, NavLink, Col } from "react-bootstrap"
 
-const BlogCard = ({ post, profile }) => {
+const BlogCard = ({ post }) => {
 
   console.log(post)
 
@@ -22,7 +22,7 @@ const BlogCard = ({ post, profile }) => {
             >{post.title}</NavLink>
           </Card.Title>
           <Card.Text className="fs-5">
-            {`${ToText(post.description.slice(0, 250))}...`}
+            {`${ToText(post.description.slice(0, 400))}...`}
           </Card.Text>
         </Card.Body>
       </Card>
