@@ -29,15 +29,17 @@
   color: #61dafb;
 }
 
-/* h1 {
-  font-family: 'ZCOOL QingKe HuangYou', cursive;
-} */
+.blog-card {
+  height: 360px;
+  overflow: hidden;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card-body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .description {
+    overflow: auto;
   }
 }
