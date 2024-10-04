@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
-import{ init } from '@emailjs/browser';
-init('REACT_APP_EMAILJS_USER_ID');
-
 
 const ContactForm = ({setAlertContent, setShowAlert}) => {
   
@@ -13,16 +10,19 @@ const ContactForm = ({setAlertContent, setShowAlert}) => {
   
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, formData, process.env.REACT_APP_EMAILJS_USER_ID)
-      .then((result) => {
-          setFormData({email: '', firstName: '', lastName: '', subject: '', message: ''})
-          setAlertContent({heading: "Thank you for contacting me.", message: "I will respond to your message as soon as I can."})
-          setShowAlert(true)
-      }, (error) => {
-        setAlertContent({heading: "Something went wrong.", message: error.text})
+    emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+      formData, process.env.REACT_APP_EMAILJS_USER_ID
+    )
+    .then((result) => {
+        setFormData({email: '', firstName: '', lastName: '', subject: '', message: ''})
+        setAlertContent({heading: "Thank you for contacting me.", message: "I will respond to your message as soon as I can."})
         setShowAlert(true)
-      });
+    }, (error) => {
+      setAlertContent({heading: "Something went wrong.", message: error.text})
+      setShowAlert(true)
+    });
   };
 
   return (
