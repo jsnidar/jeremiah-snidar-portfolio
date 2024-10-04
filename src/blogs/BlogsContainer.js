@@ -38,7 +38,9 @@ const BlogsContainer = () => {
     }
   }, [blog.isLoading])
 
-  const renderBlogs = blog.item.length > 0 ? blog.item.map((post, index) => <BlogCard profile={profile} post={post} key={index} />) : null
+  const renderBlogs = blog.item.length > 0 ? 
+    blog.item.map((post, index) => <BlogCard profile={profile} post={post} key={index} />) :
+    null
 
   return (
     <>
