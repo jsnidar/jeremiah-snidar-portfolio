@@ -29,7 +29,7 @@ const Education = () => {
 
   const renderEducation = education.map((school, index) => <Row key={index} className="pb-4">
     <Col xs={12} md={6} className="text-start fs-4">
-      <span className="fw-bold">{school.degree}</span>
+      <span className="fw-bolder">{school.degree}</span>
       <br></br>
       <span>{school.concentration}</span>
       <br></br>
