@@ -28,15 +28,15 @@ export class Experience extends Component {
         },
         {
             type: 'Backend',
-            examples: ['Java', 'Spring', 'SpringBoot', 'Apache Tomcat', 'Ruby', 'Rails', 'Sinatra']
+            examples: ['Java', 'Spring', 'SpringBoot', 'Apache Tomcat', 'Ruby', 'Rails', 'Sinatra', 'PostgreSQL']
         },
         {
             type: 'Data Transfer',
             examples: ['REST', 'Apollo GraphQL', 'JSON', 'Axios', 'Undici']
         },
         {
-            type: 'AWS',
-            examples: ['S3', 'EC2', 'CodeBuild', 'CodePipeline', 'Step Functions']
+            type: 'DevOps',
+            examples: ['AWS', 'Docker', 'Jenkins', 'S3', 'EC2', 'CodeBuild', 'CodePipeline', 'Step Functions']
         }
     ]
 
